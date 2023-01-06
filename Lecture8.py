@@ -51,7 +51,7 @@ print(l)
 for each in range(l.count(5)):  # removes all 5 with cycle
     l.remove(5)
 print(l)
-
+print({*l})  # set remove duplicates
 # extra functions for lists are min,max,sum for numbers in lists
 nums = [1, 4, 3, 2, 5]
 print(min(nums))  # prints min number of list
@@ -79,5 +79,5 @@ else:
 user_input = [i ** 2 for i in range(5)]  # list comprehension with cycle
 print(user_input)
 
-user_input = [i ** 2 for i in range(2, 10) if (i ** 2) % 2 == 0]    # list comprehension with cycle and condition
+user_input = [i ** 2 for i in range(2, 10) if (i ** 2) % 2 == 0]  # list comprehension with cycle and condition
 print(user_input)
